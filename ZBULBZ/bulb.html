@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 20vw;
+            height: 50vh;
+            margin-left: 45%;
+            margin-top: 10%;
+            /* position: absolute; */
+        
+        }
+        .on_btn{
+            height: 60px;
+            width: 100px;
+            background-color: greenyellow;
+            /* position: relative; */
+            /* margin-top: 525px; */
+            margin-left: 50%;
+            margin-top: 10%; 
+            inset: 2em 50px 20px;
+            
+
+        }
+        .on_btn:hover{
+            background-color: green;
+
+        }
+    </style>
+</head>
+<body>
+    <img src="bulb_off.jpg" id="bulb"alt="">
+    <button class="on_btn" id="toggleBtn">
+        Turn ON
+    </button>
+
+    <script>
+        let on_btn = document.getElementById('toggleBtn')
+        let bulb = document.getElementById('bulb')
+        on_btn.addEventListener('click', toggleBulb)
+
+        function toggleBulb(e){
+            bulb.src="bulb_on.jpg"
+        }
+        
+    </script>
+</body>
+</html>
